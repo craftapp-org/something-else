@@ -34,8 +34,6 @@ services:
     build: ./backend
     volumes:
       - ./backend/.env:/app/.env
-    env_file:
-      - ./.env
     depends_on:
       postgres:
         condition: service_healthy
